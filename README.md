@@ -35,8 +35,8 @@ git clone repo<URL>
 cd merging_branches_git
 code .
 
+ 
  Step 2: Create a File and Make Initial Commit on main
-
 echo "Line from main branch" > file.txt
 git add file.txt
 git commit -m "Add file.txt with main branch content"
@@ -45,7 +45,6 @@ git commit -m "Add file.txt with main branch content"
 Step 3: Create and Switch to a New Branch
 git checkout -b feature-branch
 Modify the same file:
-
 echo "This line is from feature branch" > file.txt
 git add file.txt
 git commit -m "Update file.txt from feature branch"
@@ -84,34 +83,20 @@ Then:
 git add file.txt
 git commit
  Git opened Vim for the merge commit message. We saved and exited with:
-
 :wq
+ 
  Step 7: Push Changes to GitHub
-bash
-Copy
-Edit
 git push origin main
-
-
 git push origin feature-branch
 
 Result
 Conflict was resolved successfully
-
 Merge history preserved with proper commit messages
-
 Repository pushed to GitHub
-
- Visual Git Log (for clarity)
+Visual Git Log (for clarity)
 
 git log --oneline --graph --all
-Sample Output:
 
-
-
-sql
-Copy
-Edit
 *   4a94558 (HEAD -> main) Merge branch 'feature-branch'
 |\
 | * c91a4fa (feature-branch) Update file.txt from feature branch
@@ -121,11 +106,7 @@ Edit
 
 
 🏁 Conclusion
-This project showcases:
-
 Git branching workflow
-
 Safe conflict handling
-
 Best practices for collaborative development
 
